@@ -1,0 +1,112 @@
+*{
+     margin: 0%;
+     padding: 0%;
+     box-sizing: border-box;
+}
+
+body{
+background-color: rgba(62, 20, 20, 0.4);
+font-family: Lato;
+}
+.main{
+      position: absolute;
+      width: 70%;     
+      background: transparent;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      display: flex;
+      flex-flow: row wrap;  /* flex-basis+flex-wrap*/
+      gap: 10px;
+     
+      
+}
+.p1,.p2{
+    
+    height: 600px; 
+    box-shadow: 0px 0px 10px rgb(78, 73, 73);
+    flex:1 1 40%;   /* flex-grow+flex-shrink+flex-basis*/
+    position: relative;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+   
+}
+/* /* @media (min-width:550em){
+    .main{
+        flex-flow : column wrap; 
+    } */
+.p2{ 
+    background-color: white;
+}
+.score1,.score2{
+    position: absolute;
+    font-size: 80px;
+    font-weight: 100;
+    color: red;
+   margin: 120px 230px;
+}
+.box1,.box2{
+    width: 23%;
+    height: 14%;
+    background-color: #EB4D4D;
+    text-align: center;
+    margin: 70% auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    text-transform: uppercase;
+    
+}
+.current-sc2{
+   color: white;
+   font-size: 28px;
+   font-weight: 100;
+}
+button{
+    
+        width: 95px;
+        height: 51px;
+        color: tomato;
+        border-radius: 5px;
+        border-style: none;
+          
+}
+
+.play  {
+   
+    bottom: 127px;
+    width: 254px;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.add{
+    top: 37px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 254px;
+    height: 165px;
+
+}
+.icons{
+    position: absolute;
+    display: flex;
+    height: 510px;
+    width: 114px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+    flex-direction: column;
+    gap:50px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+button:focus{
+    outline: none;
+}
